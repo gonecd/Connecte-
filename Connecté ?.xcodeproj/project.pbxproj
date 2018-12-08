@@ -12,6 +12,11 @@
 		620841EA21B426B500EF1A01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620841E821B426B500EF1A01 /* Main.storyboard */; };
 		620841EC21B426B700EF1A01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620841EB21B426B700EF1A01 /* Assets.xcassets */; };
 		620841EF21B426B700EF1A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620841ED21B426B700EF1A01 /* LaunchScreen.storyboard */; };
+		620841F721B427B500EF1A01 /* Netatmo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620841F621B427B500EF1A01 /* Netatmo.swift */; };
+		6217307A21BBFE4700D37350 /* Xiaomi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217307921BBFE4700D37350 /* Xiaomi.swift */; };
+		6217307C21BBFE5400D37350 /* Parrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217307B21BBFE5400D37350 /* Parrot.swift */; };
+		6217307E21BBFE6100D37350 /* Withings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217307D21BBFE6100D37350 /* Withings.swift */; };
+		6217308021BBFE6C00D37350 /* Nest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217307F21BBFE6C00D37350 /* Nest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		620841EB21B426B700EF1A01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		620841EE21B426B700EF1A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		620841F021B426B700EF1A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		620841F621B427B500EF1A01 /* Netatmo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netatmo.swift; sourceTree = "<group>"; };
+		6217307921BBFE4700D37350 /* Xiaomi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xiaomi.swift; sourceTree = "<group>"; };
+		6217307B21BBFE5400D37350 /* Parrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parrot.swift; sourceTree = "<group>"; };
+		6217307D21BBFE6100D37350 /* Withings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Withings.swift; sourceTree = "<group>"; };
+		6217307F21BBFE6C00D37350 /* Nest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,25 @@
 			children = (
 				620841E421B426B500EF1A01 /* AppDelegate.swift */,
 				620841E621B426B500EF1A01 /* ViewController.swift */,
+				6217307821BBFE2000D37350 /* Sources */,
 				620841E821B426B500EF1A01 /* Main.storyboard */,
 				620841EB21B426B700EF1A01 /* Assets.xcassets */,
 				620841ED21B426B700EF1A01 /* LaunchScreen.storyboard */,
 				620841F021B426B700EF1A01 /* Info.plist */,
 			);
 			path = "Connecté ?";
+			sourceTree = "<group>";
+		};
+		6217307821BBFE2000D37350 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				620841F621B427B500EF1A01 /* Netatmo.swift */,
+				6217307921BBFE4700D37350 /* Xiaomi.swift */,
+				6217307B21BBFE5400D37350 /* Parrot.swift */,
+				6217307D21BBFE6100D37350 /* Withings.swift */,
+				6217307F21BBFE6C00D37350 /* Nest.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620841F721B427B500EF1A01 /* Netatmo.swift in Sources */,
+				6217307C21BBFE5400D37350 /* Parrot.swift in Sources */,
 				620841E721B426B500EF1A01 /* ViewController.swift in Sources */,
+				6217307A21BBFE4700D37350 /* Xiaomi.swift in Sources */,
+				6217307E21BBFE6100D37350 /* Withings.swift in Sources */,
+				6217308021BBFE6C00D37350 /* Nest.swift in Sources */,
 				620841E521B426B500EF1A01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

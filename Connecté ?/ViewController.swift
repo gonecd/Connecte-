@@ -13,6 +13,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //var netatmo   : Netatmo  = Netatmo.init()
+        var parrot    : Parrot   = Parrot.init()
+        //var xiaomi    : Xiaomi   = Xiaomi.init()
+        //var withings  : Withings = Withings.init()
+        //var nest      : Nest     = Nest.init()
+
     }
 
 

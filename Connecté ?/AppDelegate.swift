@@ -47,9 +47,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      open url: URL,
                      options: [UIApplication.OpenURLOptionsKey : Any] = [:] ) -> Bool {
         
-        print("Callback !!!")
-        
-        
+        let components = NSURLComponents(url: url, resolvingAgainstBaseURL: true)
+        let source = components!.host
+        let params = components!.queryItems
+
+        switch source {
+        case "Withings":
+            withings.getToken(authCode: params?.first?.value ?? "")
+            withings.loadDevices()
+            break
+            
+        case "NetAtmo":
+            print("source NetAtmo")
+            break
+            
+        case "Nest":
+            nest.getToken(authCode: params?.last?.value ?? "")
+            nest.loadDevices()
+            break
+            
+        default:
+            print("Callback URL scheme : Source inconnue = \(source ?? "")")
+        }
         
         return true
     }

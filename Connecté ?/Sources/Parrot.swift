@@ -19,9 +19,7 @@ class Parrot {
     var accessToken : String = ""
     var authHeader : String = ""
     
-    init() {
-        getToken()
-    }
+    init() { }
     
     func getToken() {
         

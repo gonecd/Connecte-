@@ -11,8 +11,8 @@ import Foundation
 class Netatmo {
 
     let NetatmoURL : String = "https://api.netatmo.com"
-    let NetatmoClientID : String = "5c040915a467a36f768e1945"
-    let NetatmoClientSecret : String = "ZZOOrlLD35O4gI4Rk546xRiOW9K60c"
+    let client_id : String = "5c040915a467a36f768e1945"
+    let client_secret : String = "ZZOOrlLD35O4gI4Rk546xRiOW9K60c"
     let NetatmoLogin : String = "gonecd@gmail.com"
     let NetatmoPassword : String = "00egalNoao"
 
@@ -20,8 +20,9 @@ class Netatmo {
     var RefreshToken : String = ""
     var TokenExpiration : Date!
 
+    init () { }
     
-    init()
+    func oldinit()
     {
         let defaults = UserDefaults.standard
         
@@ -42,7 +43,7 @@ class Netatmo {
         var request = URLRequest(url: URL(string: NetatmoURL+"/oauth2/token")!)
         request.httpMethod = "POST"
         request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        request.httpBody = "grant_type=password&client_id=\(NetatmoClientID)&client_secret=\(NetatmoClientSecret)&username=\(NetatmoLogin)&password=\(NetatmoPassword)".data(using: String.Encoding.utf8);
+        request.httpBody = "grant_type=password&client_id=\(client_id)&client_secret=\(client_secret)&username=\(NetatmoLogin)&password=\(NetatmoPassword)".data(using: String.Encoding.utf8);
         
         let task = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error in
             if let data = data, let response = response as? HTTPURLResponse  {
@@ -73,7 +74,7 @@ class Netatmo {
         var request = URLRequest(url: URL(string: NetatmoURL+"/oauth2/token")!)
         request.httpMethod = "POST"
         request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        request.httpBody = "grant_type=refresh_token&refresh_token=\(refresher)&client_id=\(NetatmoClientID)&client_secret=\(NetatmoClientSecret)".data(using: String.Encoding.utf8);
+        request.httpBody = "grant_type=refresh_token&refresh_token=\(refresher)&client_id=\(client_id)&client_secret=\(client_secret)".data(using: String.Encoding.utf8);
         
         let task = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error in
             if let data = data, let response = response as? HTTPURLResponse  {

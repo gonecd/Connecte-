@@ -17,6 +17,12 @@
 		6217307C21BBFE5400D37350 /* Parrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217307B21BBFE5400D37350 /* Parrot.swift */; };
 		6217307E21BBFE6100D37350 /* Withings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217307D21BBFE6100D37350 /* Withings.swift */; };
 		6217308021BBFE6C00D37350 /* Nest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217307F21BBFE6C00D37350 /* Nest.swift */; };
+		62B1057421FDF00D0098DC1F /* nest.png in Resources */ = {isa = PBXBuildFile; fileRef = 62B1056F21FDF00D0098DC1F /* nest.png */; };
+		62B1057921FE0B5D0098DC1F /* parrot.png in Resources */ = {isa = PBXBuildFile; fileRef = 62B1057821FE0B5C0098DC1F /* parrot.png */; };
+		62B1057D21FE0CEE0098DC1F /* xiaomi.png in Resources */ = {isa = PBXBuildFile; fileRef = 62B1057C21FE0CEE0098DC1F /* xiaomi.png */; };
+		62B1057F21FE0D900098DC1F /* netatmo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62B1057E21FE0D900098DC1F /* netatmo.png */; };
+		62B1058121FE0E000098DC1F /* nest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62B1058021FE0E000098DC1F /* nest.jpg */; };
+		62B1058321FE0E810098DC1F /* withings.ico in Resources */ = {isa = PBXBuildFile; fileRef = 62B1058221FE0E810098DC1F /* withings.ico */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		6217307B21BBFE5400D37350 /* Parrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parrot.swift; sourceTree = "<group>"; };
 		6217307D21BBFE6100D37350 /* Withings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Withings.swift; sourceTree = "<group>"; };
 		6217307F21BBFE6C00D37350 /* Nest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nest.swift; sourceTree = "<group>"; };
+		62B1056F21FDF00D0098DC1F /* nest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nest.png; sourceTree = "<group>"; };
+		62B1057821FE0B5C0098DC1F /* parrot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parrot.png; sourceTree = "<group>"; };
+		62B1057C21FE0CEE0098DC1F /* xiaomi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiaomi.png; sourceTree = "<group>"; };
+		62B1057E21FE0D900098DC1F /* netatmo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = netatmo.png; sourceTree = "<group>"; };
+		62B1058021FE0E000098DC1F /* nest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nest.jpg; sourceTree = "<group>"; };
+		62B1058221FE0E810098DC1F /* withings.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = withings.ico; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			children = (
 				620841E421B426B500EF1A01 /* AppDelegate.swift */,
 				620841E621B426B500EF1A01 /* ViewController.swift */,
+				62B1056D21FDEFE50098DC1F /* Images */,
 				6217307821BBFE2000D37350 /* Sources */,
 				620841E821B426B500EF1A01 /* Main.storyboard */,
 				620841EB21B426B700EF1A01 /* Assets.xcassets */,
@@ -85,6 +98,19 @@
 				6217307F21BBFE6C00D37350 /* Nest.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		62B1056D21FDEFE50098DC1F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				62B1056F21FDF00D0098DC1F /* nest.png */,
+				62B1058021FE0E000098DC1F /* nest.jpg */,
+				62B1057E21FE0D900098DC1F /* netatmo.png */,
+				62B1058221FE0E810098DC1F /* withings.ico */,
+				62B1057821FE0B5C0098DC1F /* parrot.png */,
+				62B1057C21FE0CEE0098DC1F /* xiaomi.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +172,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				620841EF21B426B700EF1A01 /* LaunchScreen.storyboard in Resources */,
+				62B1057421FDF00D0098DC1F /* nest.png in Resources */,
+				62B1057D21FE0CEE0098DC1F /* xiaomi.png in Resources */,
+				62B1058121FE0E000098DC1F /* nest.jpg in Resources */,
+				62B1057921FE0B5D0098DC1F /* parrot.png in Resources */,
 				620841EC21B426B700EF1A01 /* Assets.xcassets in Resources */,
+				62B1057F21FE0D900098DC1F /* netatmo.png in Resources */,
+				62B1058321FE0E810098DC1F /* withings.ico in Resources */,
 				620841EA21B426B500EF1A01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

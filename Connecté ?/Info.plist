@@ -25,7 +25,7 @@
 			<string>Home.Connecte</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>HomeConnecteNetatmo</string>
+				<string>HomeConnecte</string>
 			</array>
 		</dict>
 	</array>

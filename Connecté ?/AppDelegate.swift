@@ -57,8 +57,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             withings.loadDevices()
             break
             
-        case "NetAtmo":
+        case "Netatmo":
             print("source NetAtmo")
+            netatmo.getToken(authCode: params?.last?.value ?? "")
             break
             
         case "Nest":

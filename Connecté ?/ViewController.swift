@@ -9,10 +9,14 @@
 import UIKit
 
 var netatmo   : Netatmo  = Netatmo.init()
-var parrot    : Parrot   = Parrot.init()
 var xiaomi    : Xiaomi   = Xiaomi.init()
 var withings  : Withings = Withings.init()
 var nest      : Nest     = Nest.init()
+
+let startChimios : Int = 1646866800
+let oneWeek      : Int = 604800
+let oneDay       : Int = 86400
+
 
 
 class ViewController: UIViewController {
@@ -20,7 +24,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var boutonNetatmo: UIButton!
     @IBOutlet weak var boutonNest: UIButton!
     @IBOutlet weak var boutonWithings: UIButton!
-    @IBOutlet weak var boutonParrot: UIButton!
     @IBOutlet weak var boutonXiaomi: UIButton!
 
     
@@ -32,13 +35,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //withings.askAuthorization()
+        withings.askAuthorization()
         //nest.askAuthorization()
 
         initBouton(unBouton: boutonNetatmo, couleur : UIColor.blue)
         initBouton(unBouton: boutonNest, couleur : UIColor.darkGray)
         initBouton(unBouton: boutonWithings, couleur : UIColor.darkGray)
-        initBouton(unBouton: boutonParrot, couleur : UIColor.darkGray)
         initBouton(unBouton: boutonXiaomi, couleur : UIColor.darkGray)
         
         showPiles()
@@ -74,6 +76,7 @@ class ViewController: UIViewController {
    
     
     @IBAction func startNetatmo(_ sender: Any) {
+        netatmo.askAuthorization()
         
     }
     
@@ -85,12 +88,16 @@ class ViewController: UIViewController {
     @IBAction func startWithings(_ sender: Any) {
         withings.askAuthorization()
         showPiles()
-    }
-    
-    @IBAction func startParrot(_ sender: Any) {
+        
+//        withings.loadMeasures(measure: withings.measureBodyTemp, start: startChimios+(6*oneWeek), end: startChimios+(7*oneWeek))
     }
     
     @IBAction func startXiaomi(_ sender: Any) {
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
     }
 }
 

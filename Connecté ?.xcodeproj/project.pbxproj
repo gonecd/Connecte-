@@ -14,15 +14,15 @@
 		620841EF21B426B700EF1A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620841ED21B426B700EF1A01 /* LaunchScreen.storyboard */; };
 		620841F721B427B500EF1A01 /* Netatmo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620841F621B427B500EF1A01 /* Netatmo.swift */; };
 		6217307A21BBFE4700D37350 /* Xiaomi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217307921BBFE4700D37350 /* Xiaomi.swift */; };
-		6217307C21BBFE5400D37350 /* Parrot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217307B21BBFE5400D37350 /* Parrot.swift */; };
 		6217307E21BBFE6100D37350 /* Withings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217307D21BBFE6100D37350 /* Withings.swift */; };
 		6217308021BBFE6C00D37350 /* Nest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217307F21BBFE6C00D37350 /* Nest.swift */; };
 		62B1057421FDF00D0098DC1F /* nest.png in Resources */ = {isa = PBXBuildFile; fileRef = 62B1056F21FDF00D0098DC1F /* nest.png */; };
-		62B1057921FE0B5D0098DC1F /* parrot.png in Resources */ = {isa = PBXBuildFile; fileRef = 62B1057821FE0B5C0098DC1F /* parrot.png */; };
 		62B1057D21FE0CEE0098DC1F /* xiaomi.png in Resources */ = {isa = PBXBuildFile; fileRef = 62B1057C21FE0CEE0098DC1F /* xiaomi.png */; };
 		62B1057F21FE0D900098DC1F /* netatmo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62B1057E21FE0D900098DC1F /* netatmo.png */; };
 		62B1058121FE0E000098DC1F /* nest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 62B1058021FE0E000098DC1F /* nest.jpg */; };
 		62B1058321FE0E810098DC1F /* withings.ico in Resources */ = {isa = PBXBuildFile; fileRef = 62B1058221FE0E810098DC1F /* withings.ico */; };
+		F11AD2DC2847CC6C00AB1980 /* note.csv in Resources */ = {isa = PBXBuildFile; fileRef = F11AD2DB2847CC6C00AB1980 /* note.csv */; };
+		F1D5118728183CAF003338D5 /* WithingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D5118628183CAF003338D5 /* WithingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,15 +35,15 @@
 		620841F021B426B700EF1A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		620841F621B427B500EF1A01 /* Netatmo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netatmo.swift; sourceTree = "<group>"; };
 		6217307921BBFE4700D37350 /* Xiaomi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xiaomi.swift; sourceTree = "<group>"; };
-		6217307B21BBFE5400D37350 /* Parrot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parrot.swift; sourceTree = "<group>"; };
 		6217307D21BBFE6100D37350 /* Withings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Withings.swift; sourceTree = "<group>"; };
 		6217307F21BBFE6C00D37350 /* Nest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nest.swift; sourceTree = "<group>"; };
 		62B1056F21FDF00D0098DC1F /* nest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nest.png; sourceTree = "<group>"; };
-		62B1057821FE0B5C0098DC1F /* parrot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parrot.png; sourceTree = "<group>"; };
 		62B1057C21FE0CEE0098DC1F /* xiaomi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiaomi.png; sourceTree = "<group>"; };
 		62B1057E21FE0D900098DC1F /* netatmo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = netatmo.png; sourceTree = "<group>"; };
 		62B1058021FE0E000098DC1F /* nest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nest.jpg; sourceTree = "<group>"; };
 		62B1058221FE0E810098DC1F /* withings.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = withings.ico; sourceTree = "<group>"; };
+		F11AD2DB2847CC6C00AB1980 /* note.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = note.csv; sourceTree = "<group>"; };
+		F1D5118628183CAF003338D5 /* WithingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +78,8 @@
 			children = (
 				620841E421B426B500EF1A01 /* AppDelegate.swift */,
 				620841E621B426B500EF1A01 /* ViewController.swift */,
+				F1D5118628183CAF003338D5 /* WithingsView.swift */,
+				F1D511882826BC4A003338D5 /* Data */,
 				62B1056D21FDEFE50098DC1F /* Images */,
 				6217307821BBFE2000D37350 /* Sources */,
 				620841E821B426B500EF1A01 /* Main.storyboard */,
@@ -93,7 +95,6 @@
 			children = (
 				620841F621B427B500EF1A01 /* Netatmo.swift */,
 				6217307921BBFE4700D37350 /* Xiaomi.swift */,
-				6217307B21BBFE5400D37350 /* Parrot.swift */,
 				6217307D21BBFE6100D37350 /* Withings.swift */,
 				6217307F21BBFE6C00D37350 /* Nest.swift */,
 			);
@@ -107,10 +108,17 @@
 				62B1058021FE0E000098DC1F /* nest.jpg */,
 				62B1057E21FE0D900098DC1F /* netatmo.png */,
 				62B1058221FE0E810098DC1F /* withings.ico */,
-				62B1057821FE0B5C0098DC1F /* parrot.png */,
 				62B1057C21FE0CEE0098DC1F /* xiaomi.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		F1D511882826BC4A003338D5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F11AD2DB2847CC6C00AB1980 /* note.csv */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,11 +148,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Cyril DELAMARE";
 				TargetAttributes = {
 					620841E021B426B500EF1A01 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -175,11 +184,11 @@
 				62B1057421FDF00D0098DC1F /* nest.png in Resources */,
 				62B1057D21FE0CEE0098DC1F /* xiaomi.png in Resources */,
 				62B1058121FE0E000098DC1F /* nest.jpg in Resources */,
-				62B1057921FE0B5D0098DC1F /* parrot.png in Resources */,
 				620841EC21B426B700EF1A01 /* Assets.xcassets in Resources */,
 				62B1057F21FE0D900098DC1F /* netatmo.png in Resources */,
 				62B1058321FE0E810098DC1F /* withings.ico in Resources */,
 				620841EA21B426B500EF1A01 /* Main.storyboard in Resources */,
+				F11AD2DC2847CC6C00AB1980 /* note.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				620841F721B427B500EF1A01 /* Netatmo.swift in Sources */,
-				6217307C21BBFE5400D37350 /* Parrot.swift in Sources */,
+				F1D5118728183CAF003338D5 /* WithingsView.swift in Sources */,
 				620841E721B426B500EF1A01 /* ViewController.swift in Sources */,
 				6217307A21BBFE4700D37350 /* Xiaomi.swift in Sources */,
 				6217307E21BBFE6100D37350 /* Withings.swift in Sources */,
@@ -248,6 +257,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -273,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -309,6 +319,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -328,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,7 +352,7 @@
 		620841F421B426B700EF1A01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MXLKZ7P9DM;
 				INFOPLIST_FILE = "Connecté ?/Info.plist";
@@ -351,7 +362,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Home.Connecte---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -359,7 +370,7 @@
 		620841F521B426B700EF1A01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MXLKZ7P9DM;
 				INFOPLIST_FILE = "Connecté ?/Info.plist";
@@ -369,7 +380,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Home.Connecte---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -32,12 +32,14 @@ class Nest {
         let defaults = UserDefaults.standard
         
         if ((defaults.object(forKey: "NestAccessToken")) != nil) {
-            
+        //if (1 == 2) {
+            self.Token = defaults.string(forKey: "NestAccessToken")!
+
             print("Expiration = \(defaults.object(forKey: "NestTokenExpiration") ?? "")")
             print()
             print("Default = \(defaults.description)")
             
-            //loadDevices()
+            loadDevices()
         }
         else {
             print("Request authorization to end user")
@@ -78,23 +80,28 @@ class Nest {
     
     
     func loadDevices() {
-        let path : String = NestURL3 + "devices/smoke_co_alarms/S4xaoUkme4KlMN4XBDELYBpFSyDSrbI7/battery_health"
+        //let path : String = NestURL3 + "devices/smoke_co_alarms/S4xaoUkme4KlMN4XBDELYBpFSyDSrbI7/battery_health"
+        //let path : String = NestURL3 + "devices/smoke_co_alarms/"
+        let path : String = "https://developer-api.nest.com"
         let url : URL = URL(string: path.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("Bearer \(Token)", forHTTPHeaderField: "Authorization")
+        print("Step 0 with Token = \(Token), on URL = \(url)")
 
         let task = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error in
             if let data = data, let response = response as? HTTPURLResponse  {
-                //if (response.statusCode != 200) { print("Nest::loadDevices error \(response.statusCode) received "); return; }
+                print("Step 1")
+                if (response.statusCode != 200) { print("Nest::loadDevices error \(response.statusCode) received "); }
+                print("Step 2")
                 do {
                     let result : NSDictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
                     
                     print("Result = \(result)")
                     
-                } catch let error as NSError { print("Nest::loadDevices failed: \(error.localizedDescription)") }
-            } else { print("Nest::loadDevices failed: \(error!.localizedDescription)") }
+                } catch let error as NSError { print("Nest::loadDevices failed1: \(error.localizedDescription)") }
+            } else { print("Nest::loadDevices failed2: \(error!.localizedDescription)") }
         })
         
         task.resume()
